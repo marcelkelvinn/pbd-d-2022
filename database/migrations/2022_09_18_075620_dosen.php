@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('Dosen', function (Blueprint $table) {
-            $table->varchar('NIP',25);
+            $table->varchar('NIP',25)->primary;
             $table->varchar('Nama',45);
             $table->varchar('No_Telpon',20);
             $table->varchar('Email',45);
