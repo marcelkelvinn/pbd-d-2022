@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('Program_Studi', function (Blueprint $table) {
             $table->smallint('ID_Program_Studi')->primary;
-            $table->varchar('Program_Studi',45);
+            $table->varchar('Prodi',45);
         });
     }
 
