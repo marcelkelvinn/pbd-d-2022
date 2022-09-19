@@ -13,7 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('Mata_Kuliah', function (Blueprint $table) {
+            $table->varchar('Kode_MK',10)->primary;
+            $table->smallint('SKS');
+            $table->varchar('Mata_Kuliah',45);
+            
+            $table->foreign('Mahasiswa_NIM')->references('NIM')->on('Mahasiswa');
+            $table->foreign('Dosen_NIP')->references('NIP')->on('Dosen');
+        });
+        
     }
 
     /**
@@ -23,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('Mata_Kuliah');
     }
 };
