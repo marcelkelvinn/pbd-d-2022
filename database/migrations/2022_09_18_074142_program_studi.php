@@ -13,7 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('Program_Studi', function (Blueprint $table) {
+            $table->smallint('ID_Program_Studi')->primary;
+            $table->varchar('Program_Studi',45);
+        });
     }
 
     /**
@@ -23,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('Program_Studi');
     }
 };
