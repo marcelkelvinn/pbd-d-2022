@@ -215,6 +215,52 @@ class DatabaseSeeder extends Seeder
         'Mata_kuliah' => 'Algoritma dan Struktur Data',
         'SKS' => '3'
     ]);
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '102',
+        'NIP' => '196109051986011024',
+        'NIM' => '215150707111711',
+        'Mata_kuliah' => 'Algoritma dan Struktur Data',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '102',
+        'NIP' => '196109051986011024',
+        'NIM' => '215150707111321',
+        'Mata_kuliah' => 'Algoritma dan Struktur Data',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '102',
+        'NIP' => '196109051986011024',
+        'NIM' => '195150701111936',
+        'Mata_kuliah' => 'Algoritma dan Struktur Data',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '103',
+        'NIP' => '20180452111612223',
+        'NIM' => '215150707111711',
+        'Mata_kuliah' => 'Statistika',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '103',
+        'NIP' => '20180452111612223',
+        'NIM' => '195150701111936',
+        'Mata_kuliah' => 'Statistika',
+        'SKS' => '3'
+    ]);
     
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '103',
+        'NIP' => '20180452111612223',
+        'NIM' => '215150707111321',
+        'Mata_kuliah' => 'Statistika',
+        'SKS' => '3'
+    ]);
 }
 }
