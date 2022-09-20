@@ -262,5 +262,37 @@ class DatabaseSeeder extends Seeder
         'Mata_kuliah' => 'Statistika',
         'SKS' => '3'
     ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '103',
+        'NIP' => '20180452111612223',
+        'NIM' => '185150700111000',
+        'Mata_kuliah' => 'Statistika',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '104',
+        'NIP' => '195707121985031057',
+        'NIM' => '205150701111404',
+        'Mata_kuliah' => 'Jaringan Komputer Dasar',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '104',
+        'NIP' => '195707121985031057',
+        'NIM' => '195150701111936',
+        'Mata_kuliah' => 'Jaringan Komputer Dasar',
+        'SKS' => '3'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '104',
+        'NIP' => '195707121985031057',
+        'NIM' => '225150701111697',
+        'Mata_kuliah' => 'Jaringan Komputer Dasar',
+        'SKS' => '3'
+    ]);
 }
 }
