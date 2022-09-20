@@ -22,6 +22,7 @@ return new class extends Migration
             $table->smallint('Nilai_Keaktifan');
 
             $table->foreign('Dosen_NIP')->references('NIP')->on('Dosen');
+            $table->foreign('Mahasiswa_NIM')->references('NIM')->on('Mahasiswa');
             $table->foreign('Mata_Kuliah_Kode_MK')->references('Kode_MK')->on('Mata_Kuliah');
         });
     }
