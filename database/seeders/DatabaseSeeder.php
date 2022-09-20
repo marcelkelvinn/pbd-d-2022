@@ -92,5 +92,43 @@ class DatabaseSeeder extends Seeder
         'Angkatan' => '2021',
         'Email' => 'AdiTX04@student.ub.ac.id'
     ]);
+
+    DB::table('Mahasiswa')->insert([
+        'NIM' => '185150700111000',
+        'ID_Program_Studi' => '2',
+        'Nama' => 'Tiara Nadita Putri',
+        'Angkatan' => '2018',
+        'Email' => 'Tiara319@student.ub.ac.id'
+    ]);
+
+    DB::table('Mahasiswa')->insert([
+        'NIM' => '205150701111404',
+        'ID_Program_Studi' => '3',
+        'Nama' => 'Bintang Laksana',
+        'Angkatan' => '2020',
+        'Email' => 'Bintanglangit@student.ub.ac.id'
+    ]);
+
+    DB::table('Mahasiswa')->insert([
+        'NIM' => '195150701111936',
+        'ID_Program_Studi' => '1',
+        'Nama' => 'Rangga Dewangga Bentar',
+        'Angkatan' => '2019',
+        'Email' => 'BentarbukanBentar@student.ub.ac.id'
+    ]);
+
+    DB::table('Dosen')->insert([
+        'NIP' => '20190453122211030',
+        'Nama' => 'Arya Bimasa',
+        'No_Telpon' => '082927480123',
+        'Email' => 'Aryasa20@gmail.com'
+    ]);
+
+    DB::table('Dosen')->insert([
+        'NIP' => '196109051986011024',
+        'Nama' => 'Puspita Dewi Ayu',
+        'No_Telpon' => '081623019657',
+        'Email' => 'Ayu123@gmail.com'
+    ]);
     }
 }
