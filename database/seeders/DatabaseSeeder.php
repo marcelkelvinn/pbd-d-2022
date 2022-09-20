@@ -130,5 +130,43 @@ class DatabaseSeeder extends Seeder
         'No_Telpon' => '081623019657',
         'Email' => 'Ayu123@gmail.com'
     ]);
+
+    DB::table('Dosen')->insert([
+        'NIP' => '20180452111612223',
+        'Nama' => 'Dita Purnomo',
+        'No_Telpon' => '085937540194',
+        'Email' => 'ditapurnomo@gmail.com'
+    ]);
+
+    DB::table('Dosen')->insert([
+        'NIP' => '195707121985031057',
+        'Nama' => 'Ahmad Salam',
+        'No_Telpon' => '082278653088',
+        'Email' => 'Ahmad19@gmail.com'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '101',
+        'NIP' => '20190453122211030',
+        'NIM' => '195150707111530',
+        'Mata_kuliah' => 'Pemrograman Aplikasi Web',
+        'SKS' => '4'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '101',
+        'NIP' => '20190453122211030',
+        'NIM' => '205150700111456',
+        'Mata_kuliah' => 'Pemrograman Aplikasi Web',
+        'SKS' => '4'
+    ]);
+
+    DB::table('Mata_Kuliah')->insert([
+        'Kode_MK' => '101',
+        'NIP' => '20190453122211030',
+        'NIM' => '215150701111831',
+        'Mata_kuliah' => 'Pemrograman Aplikasi Web',
+        'SKS' => '4'
+    ]);
     }
 }
